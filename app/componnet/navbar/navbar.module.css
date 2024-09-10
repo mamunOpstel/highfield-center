@@ -1,0 +1,66 @@
+.red {
+  color: red;
+}
+#menuBtn,
+#menuBtn span {
+  transition: all 0.2s linear;
+}
+#menuBtn:hover span {
+  background-color: white;
+}
+
+#input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 100vw !important;
+}
+#menuUl li {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#dropdown {
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+#about:hover #dropdown,
+#services:hover #dropdown,
+#study:hover #dropdown {
+  opacity: 1;
+  top: 20px;
+  height: auto;
+  padding-top: 30px;
+  z-index: -10;
+  transition: top 0.2s linear;
+}
+#dropdown ul {
+  background-color: #066aab;
+  border: 2px solid white;
+  padding: 15px 20px;
+}
+#dropdown ul li {
+  padding: 10px;
+  color: white;
+  transition: all 0.2s linear;
+}
+#dropdown ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+#visa {
+  position: relative;
+  overflow: visible !important;
+}
+#visaDropdown {
+  height: 0;
+  overflow: hidden;
+}
+#visa:hover #visaDropdown {
+  height: auto;
+  overflow: visible;
+}
+
