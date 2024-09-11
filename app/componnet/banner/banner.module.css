@@ -1,0 +1,13 @@
+.icon {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+#socialBox .links {
+  display: flex;
+}
+#socialBox .icons {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
