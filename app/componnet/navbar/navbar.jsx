@@ -41,6 +41,7 @@ function Navbar() {
                 icon={faAngleDown}
                 className=" w-[12px] h-[12px] inline "
               />
+              {/* Dropdown menu starts */}
               <div
                 id={styles.dropdown}
                 className=" absolute opacity-1 top-[-10px] "
@@ -50,6 +51,7 @@ function Navbar() {
                   <li>Our Success</li>
                 </ul>
               </div>
+              {/* Dropdown menu ends */}
             </li>
 
             <li id={styles.services} className=" cursor-pointer">
@@ -58,31 +60,36 @@ function Navbar() {
                 icon={faAngleDown}
                 className=" w-[12px] h-[12px] inline "
               />
+              {/* Dropdown menu starts */}
               <div
                 id={styles.dropdown}
                 className=" absolute opacity-1 top-[-10px] "
               >
                 <ul className=" flex flex-col rounded-md min-w-[220px] ">
-                  <li id={styles.visa} >
-                    Visit VIsa <FontAwesomeIcon
+                  <li id={styles.visa}>
+                    Visit VIsa{" "}
+                    <FontAwesomeIcon
                       icon={faAngleDown}
                       className=" w-[12px] h-[12px] inline relative overflow-visible "
                     />
+                    {/* Dropdown menu starts */}
                     <div
                       id={styles.visaDropdown}
-                      className=" absolute left-24 z-50"
+                      className=" absolute left-24 bg-green-300"
                     >
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
                         <li>Our Experts</li>
                         <li>Our Success</li>
                       </ul>
                     </div>
+                    {/* Dropdown menu ends */}
                   </li>
 
                   <li>Workpermit Visa</li>
                   <li>Air Ticket</li>
                 </ul>
               </div>
+              {/* Dropdown menu ends */}
             </li>
 
             <li id={styles.study}>

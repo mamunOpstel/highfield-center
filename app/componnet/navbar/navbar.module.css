@@ -1,6 +1,3 @@
-.red {
-  color: red;
-}
 #menuBtn,
 #menuBtn span {
   transition: all 0.2s linear;
@@ -16,16 +13,23 @@
 #container {
   width: 100vw !important;
 }
+
 #menuUl li {
   font-size: 15px;
   font-weight: 500;
 }
+
 
 #dropdown {
   height: 0px;
   padding: 0;
   overflow: hidden;
 }
+#menuUl li:hover #dropdown{
+  overflow: visible;
+}
+
+
 #about:hover #dropdown,
 #services:hover #dropdown,
 #study:hover #dropdown {
@@ -51,16 +55,22 @@
   color: black;
 }
 
+
 #visa {
   position: relative;
-  overflow: visible !important;
+  overflow: visible;
 }
-#visaDropdown {
+#visa #visaDropdown {
   height: 0;
+  position: absolute;
+  top: -20px;
   overflow: hidden;
+  transition: top 0.2s linear;
 }
 #visa:hover #visaDropdown {
   height: auto;
+  left: 80%;
+  top: 0;
   overflow: visible;
 }
 
