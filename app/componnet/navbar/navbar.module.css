@@ -19,16 +19,14 @@
   font-weight: 500;
 }
 
-
 #dropdown {
   height: 0px;
   padding: 0;
   overflow: hidden;
 }
-#menuUl li:hover #dropdown{
+#menuUl li:hover #dropdown {
   overflow: visible;
 }
-
 
 #about:hover #dropdown,
 #services:hover #dropdown,
@@ -55,22 +53,23 @@
   color: black;
 }
 
-
-#visa {
+#visa,
+#ticket {
   position: relative;
   overflow: visible;
 }
-#visa #visaDropdown {
+#visa #visaDropdown,
+#ticket #ticketDropdown {
   height: 0;
   position: absolute;
   top: -20px;
   overflow: hidden;
   transition: top 0.2s linear;
 }
-#visa:hover #visaDropdown {
+#visa:hover #visaDropdown,
+#ticket:hover #ticketDropdown {
   height: auto;
   left: 80%;
   top: 0;
   overflow: visible;
 }
-

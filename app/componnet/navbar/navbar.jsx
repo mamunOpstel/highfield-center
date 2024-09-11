@@ -78,15 +78,36 @@ function Navbar() {
                       className=" absolute left-24 bg-green-300"
                     >
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
-                        <li>Our Experts</li>
-                        <li>Our Success</li>
+                        <li>Visiting In UK</li>
+                        <li>Visiting In USA</li>
+                        <li>Visiting In CANADA</li>
+                        <li>Visiting In AUSTRALIA</li>
+                        <li>Visiting In DENMARK</li>
+                        <li>Visiting In MALTA</li>
                       </ul>
                     </div>
                     {/* Dropdown menu ends */}
                   </li>
 
                   <li>Workpermit Visa</li>
-                  <li>Air Ticket</li>
+                  <li id={styles.ticket} >
+                    Air Ticket{" "}
+                    <FontAwesomeIcon
+                      icon={faAngleDown}
+                      className=" w-[12px] h-[12px] inline relative overflow-visible "
+                    />
+                    {/* Dropdown menu starts */}
+                    <div
+                      id={styles.ticketDropdown}
+                      className=" absolute left-24 bg-green-300"
+                    >
+                      <ul className=" flex flex-col rounded-md min-w-[220px] ">
+                        <li>Domestic</li>
+                        <li>International</li>
+                      </ul>
+                    </div>
+                    {/* Dropdown menu ends */}
+                  </li>
                 </ul>
               </div>
               {/* Dropdown menu ends */}
