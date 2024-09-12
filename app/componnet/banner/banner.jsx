@@ -1,49 +1,38 @@
-import styles from "./banner.module.css";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 
-function Banner() {
+function Banner({ heading, text, color }) {
   return (
-    <div className=" w-screen max-lg:hidden ">
-      <div className=" flex justify-around items-center h-[70px] max-w-[1140px] m-auto ">
-
-        <div className=" flex  gap-24 text-white ">
-          <div className=" flex items-center gap-2 cursor-pointer" >
-            <FontAwesomeIcon icon={faPhone} className={styles.icon} />
-            +8801700-543345
+    <>
+      {color ? (
+        <div className=" flex flex-col items-center gap-8 font-poppins ">
+          <h1 className=" text-3xl text-cyan-700 font-bold ">{heading}</h1>
+          <div className=" flex items-center gap-2">
+            <span className=" w-[150px] h-[1px] bg-cyan-700 "></span>
+            <FontAwesomeIcon
+              icon={faPlaneDeparture}
+              className=" w-[25px] h-[25px] text-cyan-700 "
+            />
+            <span className=" w-[150px] h-[1px] bg-cyan-700 "></span>
           </div>
-          <div className=" flex items-center gap-2" >
-            <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />{" "}
-            highfieldcenter@gmail.com
+          {text && <p className=" text-neutral-500">{text}</p>}
+        </div>
+      ) : (
+        <div className=" flex flex-col items-center gap-8 font-poppins ">
+          <h1 className=" text-3xl text-white font-bold ">{heading}</h1>
+          <div className=" flex items-center gap-2">
+            <span className=" w-[150px] h-[1px] bg-white "></span>
+            <FontAwesomeIcon
+              icon={faPlaneDeparture}
+              className=" w-[25px] h-[25px] text-white "
+            />
+            <span className=" w-[150px] h-[1px] bg-white "></span>
           </div>
+          {text && <p className=" text-neutral-500 ">{text}</p>}
         </div>
-
-        <div
-          id={styles.socialBox}
-          className=" flex gap-4 items-center "
-        >
-          <Link href="#" className={styles.links}>
-            <FontAwesomeIcon icon={faFacebook} className={styles.icons} />
-          </Link>
-          <Link href="#" className={styles.links}>
-            <FontAwesomeIcon icon={faLinkedinIn} className={styles.icons} />
-          </Link>
-          <Link href="#" className={styles.links}>
-            <FontAwesomeIcon icon={faTwitter} className={styles.icons} />
-          </Link>
-          <Link href="#" className={styles.links}>
-            <FontAwesomeIcon icon={faInstagram} className={styles.icons} />
-          </Link>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
 
