@@ -6,7 +6,7 @@ function Banner({ heading, text, color }) {
   return (
     <>
       {color ? (
-        <div className=" flex flex-col items-center gap-8 font-poppins ">
+        <div className=" flex flex-col items-center gap-8 font-poppins mt-8 mb-8 ">
           <h1 className=" text-3xl text-cyan-700 font-bold ">{heading}</h1>
           <div className=" flex items-center gap-2">
             <span className=" w-[150px] h-[1px] bg-cyan-700 "></span>

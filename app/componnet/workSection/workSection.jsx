@@ -2,10 +2,10 @@ import React from "react";
 import Banner from "../banner/banner";
 import Card2 from "../card2/card2";
 
-import img1 from "@/app/asset/images/card/card5.jpg";
-import img2 from "@/app/asset/images/card/card6.jpg";
-import img3 from "@/app/asset/images/card/card7.jpg";
-import img4 from "@/app/asset/images/card/card8.jpg";
+import img1 from "@/app/asset/images/card/card5.svg";
+import img3 from "@/app/asset/images/card/card6.svg";
+import img2 from "@/app/asset/images/card/card8.svg";
+import img4 from "@/app/asset/images/card/card7.svg";
 
 function WorkSection() {
   let data = [
@@ -33,7 +33,7 @@ function WorkSection() {
 
   return (
     <section className=" bg-zinc-50 w-screen">
-      <div className=" w-full max-w-[1140px] m-auto min-h-40 border-2 pt-20 pb-20 ">
+      <div className=" w-full max-w-[1140px] p-8 m-auto min-h-40 pb-20 ">
         <Banner
           heading={"HOW DO WE WORK?"}
           color={"blue"}
@@ -42,7 +42,7 @@ function WorkSection() {
           }
         ></Banner>
 
-        <div>
+        <div className=" grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-4 gap-8 ">
           {data.map((card) => (
             <Card2
               key={card.heading}
