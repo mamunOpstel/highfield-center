@@ -6,16 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faMagnifyingGlass,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import Sidebar from "./sidebar";
-import { AnimatePresence, motion } from "framer-motion";
 
 function Navbar() {
-  const [OpenSidebar, setOpenSidebar] = useState(false);
-  function menuSwitch() {
-    setOpenSidebar(!OpenSidebar);
-  }
+  const [openSideMenu, setOpenSideMenu] = useState(false);
+
   return (
     <section className="container relative z-50 w-screen ">
       <div className=" bg-white w-screen">
@@ -31,7 +28,7 @@ function Navbar() {
           <button
             id={styles.menuBtn}
             className=" hidden border-[1px] border-orange-400 p-[8px] w-[45px] h-[29px] max-lg:block hover:bg-orange-500 rounded-sm "
-            onClick={() => setOpenSidebar(!OpenSidebar)}
+            onClick={() => setOpenSideMenu(!openSideMenu)}
           >
             <span className=" h-[1px] w-full bg-orange-400 border-solid block mb-[4px] hover:bg-white "></span>
             <span className=" h-[1px] w-full bg-orange-400 border-solid block mb-[4px] hover:bg-white "></span>
@@ -99,16 +96,16 @@ function Navbar() {
                   </li>
 
                   <li>Workpermit Visa</li>
-                  <li id={styles.air}>
-                    Air Ticket
+                  <li id={styles.ticket}>
+                    Air Ticket{" "}
                     <FontAwesomeIcon
                       icon={faAngleDown}
                       className=" w-[12px] h-[12px] inline relative overflow-visible "
                     />
                     {/* Dropdown menu starts */}
                     <div
-                      id={styles.airDropdown}
-                      className=" absolute left-24 "
+                      id={styles.ticketDropdown}
+                      className=" absolute left-24 bg-green-300"
                     >
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
                         <li>Domestic</li>
@@ -166,20 +163,49 @@ function Navbar() {
         </div>
 
         {/* Sidebar starts here */}
-        <AnimatePresence>
-          {OpenSidebar && (
-            <motion.div
-              className=" max-sm:w-screen max-lg:block hidden fixed top-0 w-[80%] bg-white min-h-screen z-10 "
-              initial={{ x: "-100vw" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100vw" }}
-              transition={{ duration: 0.4 }}
+        {/* {openSideMenu && (
+          <div className=" bg-white w-screen h-screen absolute top-0 bottom-0 transition duration-200  ease-in-out">
+            <FontAwesomeIcon
+              icon={faXmark}
+              className=" w-[25px] h-[25px] cursor-pointer float-right mr-8 mt-8 "
+              onClick={() => setOpenSideMenu(!openSideMenu)}
+            />
+
+            <ul
+              id={styles.menuUl}
+              className="flex gap-6 relative z-10 "
             >
-              <Sidebar switchFunc={menuSwitch} />
-            </motion.div>
-          )}
-        </AnimatePresence>
-        {/* Sidebar starts here */}
+              <li>HOME</li>
+              <li id={styles.about} className="">
+                ABOUT US{" "}
+                <FontAwesomeIcon
+                  icon={faAngleDown}
+                  className=" w-[12px] h-[12px] inline "
+                />
+              </li>
+
+              <li id={styles.services} className=" cursor-pointer">
+                SERVICES{" "}
+                <FontAwesomeIcon
+                  icon={faAngleDown}
+                  className=" w-[12px] h-[12px] inline "
+                />
+              </li>
+
+              <li id={styles.study}>
+                STUDY DESTINATION{" "}
+                <FontAwesomeIcon
+                  icon={faAngleDown}
+                  className=" w-[12px] h-[12px] inline "
+                />
+              </li>
+
+              <li>BLOG</li>
+              <li>CONTANT</li>
+            </ul>
+          </div>
+        )} */}
+        {/* Sidebar ends here */}
       </div>
     </section>
   );

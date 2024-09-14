@@ -17,7 +17,6 @@
 #menuUl li {
   font-size: 15px;
   font-weight: 500;
-  cursor: pointer;
 }
 
 #dropdown {
@@ -55,12 +54,12 @@
 }
 
 #visa,
-#air {
+#ticket {
   position: relative;
   overflow: visible;
 }
 #visa #visaDropdown,
-#air #airDropdown {
+#ticket #ticketDropdown {
   height: 0;
   position: absolute;
   top: -20px;
@@ -68,7 +67,7 @@
   transition: top 0.2s linear;
 }
 #visa:hover #visaDropdown,
-#air:hover #airDropdown {
+#ticket:hover #ticketDropdown {
   height: auto;
   left: 80%;
   top: 0;
