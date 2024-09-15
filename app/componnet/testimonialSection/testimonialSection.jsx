@@ -37,5 +37,6 @@ function TestimonialSection() {
     </section>
   );
 }
+// new changes
 
 export default TestimonialSection;
