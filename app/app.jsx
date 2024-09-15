@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "./componnet/navbar/navbar";
-import Banner from "./componnet/navBanner/navBanner";
 import HeroSection from "./componnet/hero section/hero-section";
 import Curves from "./componnet/curves/curves";
 import HeroCard from "./componnet/heroCard.jsx/heroCard";
 
-import universityImg from "@/app/asset/images/university/university1.jpg";
+import universityImg from "@/app/asset/images/university/university1.svg";
 import WorkSection from "./componnet/workSection/workSection";
 import ServiceSection from "./componnet/serviceSection/serviceSection";
 import HelpSection from "./componnet/helpSection/helpSection";
@@ -15,8 +13,6 @@ import TestimonialSection from "./componnet/testimonialSection/testimonialSectio
 function App() {
   return (
     <main className=" bg-cyan-700 min-h-screen">
-      <Banner />
-      <Navbar />
       <HeroSection />
       <Curves />
       <HeroCard

@@ -1,4 +1,4 @@
-import bannerImg from "@/app/asset/images/banner-img.png";
+import bannerImg from "@/app/asset/images/banner-img.svg";
 import Image from "next/image";
 import HoverButton from "../hoverButton/hoverButton";
 

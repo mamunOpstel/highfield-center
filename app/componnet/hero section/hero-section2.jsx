@@ -1,4 +1,4 @@
-import bannerImg from "@/app/asset/images/banner-img.png";
+import bannerImg from "@/app/asset/images/banner-img.svg";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -28,15 +28,15 @@ function HeroSection2() {
             clients in that particular country!
           </p>
           <p>
-            <FontAwesomeIcon icon={faCircleCheck} /> Straightforward,
+            <FontAwesomeIcon icon={faCircleCheck} className=" w-[15px] h-[15px] " /> Straightforward,
             stress-free, and convenient application process.
           </p>
           <p>
-            <FontAwesomeIcon icon={faCircleCheck} /> Experienced in US, UK,
+            <FontAwesomeIcon icon={faCircleCheck} className=" w-[15px] h-[15px] " /> Experienced in US, UK,
             Schengen, Canada, and Australia visa processing.
           </p>
           <p>
-            <FontAwesomeIcon icon={faCircleCheck} /> Visas processed online with
+            <FontAwesomeIcon icon={faCircleCheck} className=" w-[15px] h-[15px] " /> Visas processed online with
             document submission, strategy calls, and personalized support for
             convenience.
           </p>

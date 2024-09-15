@@ -25,7 +25,7 @@ function TestimonialCard({ text,name, img }) {
         <div>
           <FontAwesomeIcon
             icon={faQuoteRight}
-            className=" text-black w-[100px] h-[100px] "
+            className=" text-black w-[100px] h-[80px] "
           />
         </div>
       </div>

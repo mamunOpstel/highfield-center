@@ -9,10 +9,10 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Banner() {
+function NavBanner() {
   return (
-    <div className=" max-lg:hidden ">
-      <div className=" flex justify-around items-center h-[70px] max-w-[1140px] m-auto ">
+    <div className=" max-lg:hidden bg-cyan-600 ">
+      <div className=" flex justify-around items-center h-[70px] max-w-[1140px] m-auto  ">
 
         <div className=" flex  gap-24 text-white ">
           <div className=" flex items-center gap-2 cursor-pointer" >
@@ -47,4 +47,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default NavBanner;

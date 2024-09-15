@@ -1,0 +1,28 @@
+.icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+  border: 1px solid white;
+  color: #374a5e;
+}
+.checkIcon {
+  width: 15px;
+  height: 15px;
+}
+#socialBox .links {
+  display: flex;
+  padding: 10px;
+  background-color: #374a5e;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#socialBox .links:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+#socialBox .icons {
+  color: white;
+  width: 24px;
+  height: 24px;
+}

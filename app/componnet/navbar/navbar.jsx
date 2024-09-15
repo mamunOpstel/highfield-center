@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import Sidebar from "./sidebar";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 function Navbar() {
   const [OpenSidebar, setOpenSidebar] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
     setOpenSidebar(!OpenSidebar);
   }
   return (
-    <section className="container relative z-50 max-w-full">
+    <section className="container z-50 max-w-full sticky top-0">
       <div className=" bg-white ">
         <div className=" flex justify-between p-[20px] items-center gap-[20px] w-full max-w-[1140px] m-auto  bg-white text-neutral-600 fontRoboto ">
           <Image
@@ -56,7 +57,9 @@ function Navbar() {
                 className=" absolute opacity-1 top-[-10px] "
               >
                 <ul className=" flex flex-col rounded-md min-w-[220px] ">
-                  <li>Our Experts</li>
+                  <li>
+                    <Link href={"/pages/experts"}>Our Experts</Link>
+                  </li>
                   <li>Our Success</li>
                 </ul>
               </div>
@@ -106,10 +109,7 @@ function Navbar() {
                       className=" w-[12px] h-[12px] inline relative overflow-visible "
                     />
                     {/* Dropdown menu starts */}
-                    <div
-                      id={styles.airDropdown}
-                      className=" absolute left-24 "
-                    >
+                    <div id={styles.airDropdown} className=" absolute left-24 ">
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
                         <li>Domestic</li>
                         <li>International</li>
