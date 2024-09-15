@@ -32,7 +32,7 @@ function WorkSection() {
   ];
 
   return (
-    <section className=" bg-zinc-50 w-screen">
+    <section className=" bg-zinc-50">
       <div className=" w-full max-w-[1140px] p-8 m-auto min-h-40 pb-20 ">
         <Banner
           heading={"HOW DO WE WORK?"}

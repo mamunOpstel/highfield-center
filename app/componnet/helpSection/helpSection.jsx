@@ -4,7 +4,7 @@ import Button from "../button/button";
 
 function HelpSection() {
   return (
-    <section className=" bg-white w-screen">
+    <section className=" bg-white">
       <div className=" w-full max-w-[1140px] p-8 pt-24 m-auto min-h-40 pb-20 max-md:flex-col flex gap-12  ">
         <div className=" max-md:w-full w-1/2">
           <Image

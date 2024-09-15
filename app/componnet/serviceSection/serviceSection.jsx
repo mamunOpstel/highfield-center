@@ -32,7 +32,7 @@ function ServiceSection() {
   ];
 
   return (
-    <section className=" bg-cyan-700 w-screen">
+    <section className=" bg-cyan-700">
       <div className=" w-full max-w-[1140px] p-8 pt-24 m-auto min-h-40 pb-20 ">
         <Banner heading={"Our Services"} />
         <div className=" grid max-md:grid-cols-1 max-xl:grid-cols-2 grid-cols-3 gap-4 mt-8 justify-items-center ">

@@ -17,9 +17,9 @@ function Navbar() {
     setOpenSidebar(!OpenSidebar);
   }
   return (
-    <section className="container relative z-50 w-screen ">
-      <div className=" bg-white w-screen">
-        <div className=" flex justify-between p-[20px] items-center gap-[20px] w-screen max-w-[1140px] m-auto  bg-white text-neutral-600 fontRoboto ">
+    <section className="container relative z-50 max-w-full">
+      <div className=" bg-white ">
+        <div className=" flex justify-between p-[20px] items-center gap-[20px] w-full max-w-[1140px] m-auto  bg-white text-neutral-600 fontRoboto ">
           <Image
             src={logo}
             width={65}
@@ -169,7 +169,7 @@ function Navbar() {
         <AnimatePresence>
           {OpenSidebar && (
             <motion.div
-              className=" max-sm:w-screen max-lg:block hidden fixed top-0 w-[80%] bg-white min-h-screen z-10 "
+              className=" max-sm:w-full max-lg:block hidden fixed top-0 w-[80%] bg-white min-h-screen z-10 "
               initial={{ x: "-100vw" }}
               animate={{ x: 0 }}
               exit={{ x: "-100vw" }}

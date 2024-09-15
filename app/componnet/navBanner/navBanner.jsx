@@ -11,7 +11,7 @@ import {
 
 function Banner() {
   return (
-    <div className=" w-screen max-lg:hidden ">
+    <div className=" max-lg:hidden ">
       <div className=" flex justify-around items-center h-[70px] max-w-[1140px] m-auto ">
 
         <div className=" flex  gap-24 text-white ">
