@@ -8,7 +8,8 @@ import place3 from "@/app/asset/images/uk/uk3.svg";
 import place4 from "@/app/asset/images/uk/uk4.svg";
 import place5 from "@/app/asset/images/uk/uk5.svg";
 import place6 from "@/app/asset/images/uk/uk6.svg";
-import Card from "@/app/componnet/card/card";
+import Card from "@/app/componnet/cards/card/card";
+import ContactCard from "@/app/componnet/cards/contactCard/contactCard";
 
 function page() {
   let places = [
@@ -89,6 +90,7 @@ function page() {
                   hover={true}
                   rounded=""
                   shadow=""
+                  height="240px"
                 />
               </div>
             ))}
@@ -96,6 +98,10 @@ function page() {
         </div>
         {/* Cards section */}
       </section>
+
+      {/* ContactCard section starts here */}
+      <ContactCard />
+      {/* ContactCard section ends here */}
     </main>
   );
 }

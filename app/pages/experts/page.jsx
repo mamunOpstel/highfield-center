@@ -1,5 +1,5 @@
 import Banner from "@/app/componnet/banner/banner";
-import Card from "@/app/componnet/card/card";
+import Card from "@/app/componnet/cards/card/card";
 import HelpSection from "@/app/componnet/helpSection/helpSection";
 import expertsImg from "@/app/asset/images/client.svg";
 import Link from "next/link";

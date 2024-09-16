@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../banner/banner";
-import Card from "../card/card";
+import Card from "../cards/card/card";
 
 import img1 from "@/app/asset/images/card/card1.svg";
 import img2 from "@/app/asset/images/card/card2.svg";
