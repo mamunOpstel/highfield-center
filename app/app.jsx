@@ -9,6 +9,7 @@ import ServiceSection from "./componnet/serviceSection/serviceSection";
 import HelpSection from "./componnet/helpSection/helpSection";
 import HeroSection2 from "./componnet/hero section/hero-section2";
 import TestimonialSection from "./componnet/testimonialSection/testimonialSection";
+import GallerySection from "./componnet/gallerySection/gallerySection";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <HelpSection />
       <HeroSection2 />
       <TestimonialSection />
+      {/* <GallerySection /> */}
     </main>
   );
 }

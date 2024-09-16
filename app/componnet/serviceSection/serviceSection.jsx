@@ -43,6 +43,7 @@ function ServiceSection() {
               text={card.text}
               img={card.img}
               btnText={"Read More"}
+              textColor="text-black"
             />
           ))}
         </div>
