@@ -21,13 +21,15 @@ function Navbar() {
     <section className="container z-50 max-w-full sticky top-0">
       <div className=" bg-white ">
         <div className=" flex justify-between p-[20px] items-center gap-[20px] w-full max-w-[1140px] m-auto  bg-white text-neutral-600 fontRoboto ">
-          <Image
-            src={logo}
-            width={65}
-            height={50}
-            alt="Logo"
-            className=" rounded-[5px] h-[50px] w-[65px] max-w-[65px] cursor-pointer "
-          />
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              width={65}
+              height={50}
+              alt="Logo"
+              className=" rounded-[5px] h-[50px] w-[65px] max-w-[65px] cursor-pointer "
+            />
+          </Link>
 
           <button
             id={styles.menuBtn}
@@ -44,7 +46,9 @@ function Navbar() {
             id={styles.menuUl}
             className=" max-lg:hidden flex gap-6 relative z-10 "
           >
-            <li>HOME</li>
+            <li>
+              <Link href={"/"}>HOME</Link>{" "}
+            </li>
             <li id={styles.about} className="">
               ABOUT US{" "}
               <FontAwesomeIcon
@@ -90,7 +94,11 @@ function Navbar() {
                       className=" absolute left-24 bg-green-300"
                     >
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
-                        <li>Visiting In UK</li>
+                        <li>
+                          <Link href={"/pages/services/visitingInUk"}>
+                            Visiting In UK
+                          </Link>
+                        </li>
                         <li>Visiting In USA</li>
                         <li>Visiting In CANADA</li>
                         <li>Visiting In AUSTRALIA</li>
