@@ -4,7 +4,7 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 function TestimonialCard({ text,name, img }) {
   return (
-    <div className=" max-md:w-[90%] w-[370px] h-[360px] bg-white p-[30px] pt-16 rounded-lg flex flex-col justify-between font-poppins ">
+    <div className=" max-lg:w-[90%] max-lg:h-fit max-lg:gap-8 w-[350px] h-[360px] bg-white shadow-xl p-[30px] pt-16 rounded-lg flex flex-col justify-between font-poppins ">
       <p className=" text-neutral-500 leading-8 ">
        {text}
       </p>
