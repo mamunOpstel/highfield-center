@@ -109,7 +109,11 @@ function Navbar() {
                     {/* Dropdown menu ends */}
                   </li>
 
-                  <li>Workpermit Visa</li>
+                  <li>
+                    <Link href={"/pages/services/workpermit"}>
+                      Workpermit Visa
+                    </Link>
+                  </li>
                   <li id={styles.air}>
                     Air Ticket
                     <FontAwesomeIcon
@@ -119,7 +123,11 @@ function Navbar() {
                     {/* Dropdown menu starts */}
                     <div id={styles.airDropdown} className=" absolute left-24 ">
                       <ul className=" flex flex-col rounded-md min-w-[220px] ">
-                        <li>Domestic</li>
+                        <li>
+                          <Link href={"/pages/services/domestic"}>
+                            Domestic
+                          </Link>
+                        </li>
                         <li>International</li>
                       </ul>
                     </div>

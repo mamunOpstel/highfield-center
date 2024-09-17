@@ -74,7 +74,7 @@ function page() {
         </div>
 
         {/* Cards section */}
-        <div>
+        <section>
           <div className=" max-w-[1140px] m-auto p-4 pb-12 grid gap-4 max-md:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 ">
             {places.map((place, index) => (
               <div
@@ -95,7 +95,7 @@ function page() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
         {/* Cards section */}
       </section>
 
